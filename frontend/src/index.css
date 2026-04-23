@@ -1,0 +1,93 @@
+/* Tailwind Base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 🌐 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌈 Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* 🧊 Glass Card Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ✨ Input Styling */
+.input-style {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.input-style::placeholder {
+  color: #f1f1f1;
+}
+
+/* 🔘 Button Styling */
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  color: #7c3aed;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #e5e7eb;
+}
+
+/* 🎯 Card Hover Effect */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+}
+
+/* 🔥 Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a855f7;
+  border-radius: 10px;
+}
+
+/* 🎬 Smooth Animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
